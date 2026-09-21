@@ -17,14 +17,14 @@
         </a>
 
         <nav class="main-nav" aria-label="Navigasi utama">
-            <a href="{{ route('about') }}">About</a>
-            <a href="{{ route('products.index') }}">Products</a>
-            <a href="{{ route('brands.index') }}">Brands</a>
-            <a href="{{ route('industries') }}">Solutions</a>
-            <a href="{{ route('contact') }}">Contact</a>
+            <a href="{{ route('about') }}">Tentang Kami</a>
+            <a href="{{ route('products.index') }}">Produk</a>
+            <a href="{{ route('brands.index') }}">Principal</a>
+            <a href="{{ route('industries') }}">Solusi</a>
+            <a href="{{ route('contact') }}">Kontak</a>
         </nav>
 
-        <a class="header-cta" href="{{ route('inquiry.create') }}">Request Quote</a>
+        <a class="header-cta" href="{{ route('inquiry.create') }}">Minta Penawaran</a>
     </header>
 
     <main>
@@ -32,19 +32,47 @@
     </main>
 
     <footer class="site-footer">
-        <div>
-            <div class="footer-brand">
-                <img class="footer-logo" src="{{ $company['logo'] }}" alt="SMART">
-                <strong>{{ $company['name'] }}</strong>
+        <div class="footer-inner">
+            <img class="footer-tagline-logo" src="/images/smart-tagline.jpg" alt="SMART Equipment & Parts Solutions">
+
+            <div class="footer-message">
+                <h2>Let us be strategic partner</h2>
+                <p>
+                    We are fully prepared to meet and support all your Engineering, Mechanical,
+                    Electrical, and Instrumentation requirements - delivering top-quality products
+                    and procurement that is accurate, timely, and reliable.
+                </p>
             </div>
-            <p>{{ $company['description'] }}</p>
+
+            <div class="footer-contact-grid">
+                <div class="footer-contact-item footer-address">
+                    <span>Address</span>
+                    @foreach ($company['contact']['address_lines'] as $line)
+                        <p>{{ $line }}</p>
+                    @endforeach
+                </div>
+                <div class="footer-contact-stack">
+                    <div class="footer-contact-item">
+                        <span>Phone</span>
+                        <p>{{ $company['contact']['phone'] }}</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>Email</span>
+                        @foreach ($company['contact']['emails'] as $email)
+                            <p>{{ $email }}</p>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-mini-brand">
+                    <img src="{{ $company['logo'] }}" alt="SMART">
+                    <strong>{{ $company['name'] }}</strong>
+                </div>
+                <strong class="footer-thanks">Thank you</strong>
+            </div>
         </div>
-        <nav aria-label="Navigasi footer">
-            <a href="{{ route('about') }}">About</a>
-            <a href="{{ route('products.index') }}">Products</a>
-            <a href="{{ route('brands.index') }}">Brands</a>
-            <a href="{{ route('contact') }}">Contact</a>
-        </nav>
     </footer>
 </body>
 </html>
