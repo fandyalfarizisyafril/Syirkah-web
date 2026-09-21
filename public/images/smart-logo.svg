@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 122" role="img" aria-labelledby="title desc">
+    <title id="title">SMART - PT. Syirkah Mandiri Artomoro</title>
+    <desc id="desc">Logo SMART berwarna biru dengan nama PT. SYIRKAH MANDIRI ARTOMORO di bawahnya.</desc>
+    <rect width="360" height="122" fill="none"/>
+    <g fill="#0755b3">
+        <text x="2" y="78" font-family="Arial Black, Impact, sans-serif" font-size="88" font-weight="900" letter-spacing="-9">SM</text>
+        <polygon points="194 7 246 96 141 96"/>
+        <polygon points="194 31 218 80 169 80" fill="#ffffff"/>
+        <text x="218" y="78" font-family="Arial Black, Impact, sans-serif" font-size="88" font-weight="900" letter-spacing="-8">RT</text>
+        <polygon points="139 16 188 50 139 96"/>
+        <polygon points="247 16 205 51 247 96"/>
+    </g>
+    <text x="180" y="116" text-anchor="middle" fill="#050505" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" letter-spacing="0.5">
+        PT. SYIRKAH MANDIRI ARTOMORO
+    </text>
+</svg>
