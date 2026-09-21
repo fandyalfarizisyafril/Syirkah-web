@@ -38,11 +38,31 @@ return [
         ],
     ],
     'focuses' => [
-        ['title' => 'Engineering', 'description' => 'Solusi teknis berbasis spesifikasi lapangan, kebutuhan proses, dan standar operasional industri.'],
-        ['title' => 'Mechanical', 'description' => 'Pengadaan komponen mekanikal, rotating equipment, pompa, hose, compressor, dan spare parts.'],
-        ['title' => 'Electrical', 'description' => 'Motor listrik, generator, drive control, high-voltage motor, dan kebutuhan sistem kelistrikan.'],
-        ['title' => 'Instrumentation', 'description' => 'Peralatan monitoring, metering, kontrol proses, dan instrumentasi untuk akurasi operasi.'],
-        ['title' => 'Oil Spill Response & Prevention', 'description' => 'Produk pencegahan dan penanganan tumpahan minyak untuk area marine, port, dan oil & gas.'],
+        [
+            'title' => 'Engineering',
+            'description' => 'Solusi teknis berbasis spesifikasi lapangan, kebutuhan proses, dan standar operasional industri.',
+            'image' => '/images/expertise-engineering.png',
+        ],
+        [
+            'title' => 'Mechanical',
+            'description' => 'Pengadaan komponen mekanikal, rotating equipment, pompa, hose, compressor, dan spare parts.',
+            'image' => '/images/expertise-mechanical.png',
+        ],
+        [
+            'title' => 'Electrical',
+            'description' => 'Motor listrik, generator, drive control, high-voltage motor, dan kebutuhan sistem kelistrikan.',
+            'image' => '/images/expertise-electrical.png',
+        ],
+        [
+            'title' => 'Instrumentation',
+            'description' => 'Peralatan monitoring, metering, kontrol proses, dan instrumentasi untuk akurasi operasi.',
+            'image' => '/images/expertise-instrumentation.png',
+        ],
+        [
+            'title' => 'Oil Spill Response & Prevention',
+            'description' => 'Produk pencegahan dan penanganan tumpahan minyak untuk area marine, port, dan oil & gas.',
+            'image' => '/images/expertise-oil-spill.png',
+        ],
     ],
     'values' => [
         ['title' => 'Supply / Procurement', 'description' => 'Equipment dan spare part industri dari principal atau OEM yang sesuai kebutuhan pelanggan.'],

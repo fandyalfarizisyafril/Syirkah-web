@@ -58,11 +58,30 @@
 
         <div class="expertise-grid">
             @foreach ($company['focuses'] as $focus)
-                <article class="expertise-card {{ $loop->last ? 'expertise-card-featured' : '' }}">
-                    <span>{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
-                    <h3>{{ $focus['title'] }}</h3>
-                    <p>{{ $focus['description'] }}</p>
-                </article>
+                <a class="expertise-card {{ $loop->last ? 'expertise-card-featured' : '' }}" href="{{ route('products.index') }}" style="--expertise-image: url('{{ $focus['image'] }}')">
+                    <span class="expertise-number">{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                    <span class="expertise-arrow" aria-hidden="true">&rsaquo;</span>
+                    <span class="expertise-content">
+                        <h3>{{ $focus['title'] }}</h3>
+                        <p>{{ $focus['description'] }}</p>
+                    </span>
+                </a>
+            @endforeach
+        </div>
+    </section>
+
+    <section class="section expertise-showcase">
+        <div class="section-heading">
+            <span class="eyebrow">Area Keahlian</span>
+            <h2>Kapabilitas teknis yang dekat dengan kebutuhan lapangan.</h2>
+        </div>
+        <div class="expertise-image-grid">
+            @foreach ($company['focuses'] as $focus)
+                <a class="expertise-image-card" href="{{ route('products.index') }}">
+                    <img src="{{ $focus['image'] }}" alt="{{ $focus['title'] }}">
+                    <strong>{{ $focus['title'] }}</strong>
+                    <span aria-hidden="true">&rsaquo;</span>
+                </a>
             @endforeach
         </div>
     </section>
