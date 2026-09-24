@@ -68,3 +68,4 @@ Dokumen ini mengikuti `docs/PRD_PT_Syirkah_Mandiri_Artomoro.md` dan diperbarui s
 - Inquiry sudah tervalidasi dan disimpan sebagai JSON di storage lokal. Integrasi email, WhatsApp, atau Admin CMS masih masuk tahap berikutnya.
 - Admin CMS masih pending karena termasuk rekomendasi pengembangan besar pada PRD.
 - Homepage landing page sudah disusun ulang dari hero sampai RFQ dengan visual industrial, kartu bidang keahlian, trust section, katalog, sektor industri, dan tim sesuai arah desain terbaru.
+- Kartu bidang utama nomor 05 sudah diseragamkan menjadi satu card gambar dan teks seperti nomor 01 sampai 04.

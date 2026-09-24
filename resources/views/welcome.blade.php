@@ -90,12 +90,8 @@
                 </div>
             </article>
 
-            <article class="home-oil-card">
+            <article class="home-service-card">
                 <img src="{{ $oilFocus['image'] }}" alt="{{ $oilFocus['title'] }}">
-                <span>05</span>
-            </article>
-
-            <article class="home-service-card home-service-card-text">
                 <div>
                     <span>05</span>
                     <h3>{{ $oilFocus['title'] }}</h3>
