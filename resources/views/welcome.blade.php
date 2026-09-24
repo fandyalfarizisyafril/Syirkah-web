@@ -41,17 +41,35 @@
     </section>
 
     <section class="section section-light intro-section">
-        <div class="section-heading">
-            <span class="eyebrow">Tentang Perusahaan</span>
-            <h2>Trusted partner untuk industrial equipment, spare parts, dan engineering solutions.</h2>
-        </div>
-        <div class="intro-grid">
-            <p>{{ $company['description'] }}</p>
-            <p>
-                Fokusnya bukan hanya menjual barang, tetapi membantu pelanggan memilih produk,
-                spesifikasi, dan solusi pengadaan yang tepat untuk menjaga reliability, efisiensi,
-                safety, dan kontinuitas operasional.
-            </p>
+        <div class="intro-layout">
+            <div class="intro-copy">
+                <span class="eyebrow">Tentang Perusahaan</span>
+                <h2>Mitra pengadaan industri yang presisi.</h2>
+                <strong>Peralatan industri, spare part, dan solusi engineering dalam satu dukungan teknis.</strong>
+                <p>
+                    Kami membantu industri mendapatkan equipment, spare parts, dan solusi teknis yang sesuai
+                    spesifikasi operasional. Setiap kebutuhan dipahami dari fungsi, kondisi lapangan, dan target
+                    performa agar pengadaan lebih akurat, efisien, dan andal.
+                </p>
+            </div>
+
+            <div class="intro-highlights" aria-label="Ringkasan posisi perusahaan">
+                <article>
+                    <span>01</span>
+                    <h3>General Supplier</h3>
+                    <p>Pengadaan equipment dan spare part industri dari principal atau OEM.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Technical Solution</h3>
+                    <p>Pemilihan produk berbasis spesifikasi, aplikasi, dan kebutuhan lapangan.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Operational Reliability</h3>
+                    <p>Diarahkan untuk menjaga efisiensi, safety, dan kontinuitas operasional.</p>
+                </article>
+            </div>
         </div>
     </section>
 
