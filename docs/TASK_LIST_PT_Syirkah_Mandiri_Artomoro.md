@@ -20,6 +20,7 @@ Dokumen ini mengikuti `docs/PRD_PT_Syirkah_Mandiri_Artomoro.md` dan diperbarui s
 ## Must Have
 
 - [x] Homepage sesuai PRD.
+- [x] Redesign homepage landing page mengikuti referensi visual beranda awal.
 - [x] About Company section di homepage.
 - [x] About Company page dengan profil, fokus, value, dan legal.
 - [x] Products & Solutions section di homepage.
@@ -66,3 +67,4 @@ Dokumen ini mengikuti `docs/PRD_PT_Syirkah_Mandiri_Artomoro.md` dan diperbarui s
 - Nilai legal NPWP, SK Kemenkumham, dan NIB belum tersedia di PRD, sehingga struktur legal sudah tampil dengan status `Menunggu konfirmasi owner`.
 - Inquiry sudah tervalidasi dan disimpan sebagai JSON di storage lokal. Integrasi email, WhatsApp, atau Admin CMS masih masuk tahap berikutnya.
 - Admin CMS masih pending karena termasuk rekomendasi pengembangan besar pada PRD.
+- Homepage landing page sudah disusun ulang dari hero sampai RFQ dengan visual industrial, kartu bidang keahlian, trust section, katalog, sektor industri, dan tim sesuai arah desain terbaru.
