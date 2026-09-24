@@ -71,3 +71,4 @@ Dokumen ini mengikuti `docs/PRD_PT_Syirkah_Mandiri_Artomoro.md` dan diperbarui s
 - Kartu bidang utama nomor 05 sudah diseragamkan menjadi satu card gambar dan teks seperti nomor 01 sampai 04.
 - Navbar sudah ditambahkan menu Beranda dan penanda menu aktif untuk membantu orientasi pengguna.
 - Responsive homepage dan navbar sudah dipoles untuk desktop sempit, tablet, mobile, dan layar sangat kecil, serta divalidasi dengan screenshot headless 390px.
+- Section Kepercayaan Industri sudah didesain ulang dengan gaya assurance card: heading compact, deskripsi fondasi, 3 card ikon, top border, dan label benefit.

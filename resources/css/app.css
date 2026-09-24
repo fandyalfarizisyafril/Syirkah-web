@@ -307,23 +307,114 @@
     background: #ffffff;
 }
 
+.home-trust .home-section-head {
+    margin-bottom: 56px;
+}
+
+.home-trust .home-section-head h2 {
+    max-width: 760px;
+    margin-inline: auto;
+    font-size: clamp(2.25rem, 4.6vw, 4.1rem);
+    line-height: 1.05;
+}
+
+.home-trust .home-section-head p {
+    max-width: 780px;
+    margin: 18px auto 0;
+    color: #657281;
+    font-size: 1.02rem;
+    line-height: 1.65;
+}
+
+.home-trust .home-eyebrow {
+    gap: 12px;
+}
+
+.home-trust .home-eyebrow::after {
+    content: "";
+    width: 38px;
+    height: 3px;
+    background: var(--orange);
+}
+
 .home-trust-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 26px;
-    width: min(100%, 1060px);
+    gap: clamp(22px, 3vw, 34px);
+    width: min(100%, 1120px);
     margin: 0 auto;
 }
 
 .home-trust-grid article {
-    padding: 34px 30px;
-    background: #ffffff;
-    border: 1px solid var(--line);
-    border-top: 4px solid var(--ink-2);
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: clamp(28px, 4vw, 42px);
+    background: #f2f4f6;
+    border: 0;
+    border-top: 5px solid var(--ink-2);
+    box-shadow: none;
 }
 
 .home-trust-grid article.is-highlight {
     border-top-color: var(--orange);
+}
+
+.home-trust-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    color: var(--orange);
+    background: var(--ink-2);
+}
+
+.home-trust-grid article.is-highlight .home-trust-icon {
+    color: #ffffff;
+    background: var(--orange);
+}
+
+.home-trust-icon svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.home-trust-grid h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--ink-2);
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.home-trust-grid p {
+    color: #687381;
+    font-size: 0.94rem;
+    line-height: 1.72;
+}
+
+.home-trust-tag {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid #dce3e8;
+    color: var(--ink-2);
+    font-size: 0.66rem;
+    font-weight: 950;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.home-trust-grid article.is-highlight .home-trust-tag {
+    color: var(--orange);
 }
 
 .home-critical {

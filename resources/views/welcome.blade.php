@@ -106,28 +106,62 @@
         </div>
     </section>
 
-    <section class="home-section home-trust">
+    <section class="home-section home-trust" id="kepercayaan-industri">
         <div class="home-section-head home-section-head-center">
-            <span class="home-eyebrow">Kepercayaan Industri</span>
+            <span class="home-eyebrow">Jaminan Tanpa Kompromi</span>
             <h2>Kepercayaan & Keandalan di Setiap Tahap Operasional</h2>
-            <p>Kami membantu kebutuhan pengadaan industri berjalan lebih terarah, akurat, dan sesuai kebutuhan teknis lapangan.</p>
+            <p>
+                Kami mengerti bahwa kegagalan satu komponen dapat menghentikan seluruh lini produksi bernilai tinggi.
+                Pendekatan kami bertumpu pada 3 fondasi industri.
+            </p>
         </div>
 
         <div class="home-trust-grid">
             <article>
-                <span>01</span>
+                <div class="home-trust-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M6 6h12v14H6z"></path>
+                        <path d="M8 4h8"></path>
+                        <path d="M9 10h6"></path>
+                    </svg>
+                </div>
                 <h3>Supply & Procurement Resmi</h3>
-                <p>Akses produk dari principal dan OEM untuk kebutuhan equipment dan spare part industri.</p>
+                <p>
+                    Jaminan keaslian 100% komponen dengan sertifikasi langsung dari pabrikan.
+                    Bebas dari risiko suku cadang tiruan yang membahayakan keselamatan kerja.
+                </p>
+                <strong class="home-trust-tag">OEM Warranty & Traceability</strong>
             </article>
             <article class="is-highlight">
-                <span>02</span>
-                <h3>Engineering & Rekayasa Teknis</h3>
-                <p>Rekomendasi produk disesuaikan dengan spesifikasi, aplikasi, dan kondisi operasional.</p>
+                <div class="home-trust-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M8 12a4 4 0 1 1 8 0"></path>
+                        <path d="M12 8v8"></path>
+                        <path d="M7 16h10"></path>
+                        <path d="M5 19h14"></path>
+                    </svg>
+                </div>
+                <h3>Engineering & Rekayasa Kustom</h3>
+                <p>
+                    Tim insinyur membantu menghitung viskositas, head pump, torsi motor listrik,
+                    dan kebutuhan spesifikasi agar produk siap bekerja di kondisi lapangan.
+                </p>
+                <strong class="home-trust-tag">Tailored Sizing & Integration</strong>
             </article>
             <article>
-                <span>03</span>
+                <div class="home-trust-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"></path>
+                        <path d="M12 8v5"></path>
+                        <path d="M12 16h.01"></path>
+                    </svg>
+                </div>
                 <h3>Safety, K3 & Zero Downtime</h3>
-                <p>Solusi diarahkan untuk menjaga reliability, safety, dan kontinuitas fasilitas kritikal.</p>
+                <p>
+                    Selaras dengan regulasi keselamatan kerja dan standar industrial.
+                    Kami memprioritaskan umur pakai komponen, efisiensi konsumsi listrik, dan kepatuhan ramah lingkungan.
+                </p>
+                <strong class="home-trust-tag">Safety First & Green Efficiency</strong>
             </article>
         </div>
     </section>
