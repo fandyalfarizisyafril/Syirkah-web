@@ -17,11 +17,12 @@
         </a>
 
         <nav class="main-nav" aria-label="Navigasi utama">
-            <a href="{{ route('about') }}">Tentang Kami</a>
-            <a href="{{ route('products.index') }}">Produk</a>
-            <a href="{{ route('brands.index') }}">Principal</a>
-            <a href="{{ route('industries') }}">Solusi</a>
-            <a href="{{ route('contact') }}">Kontak</a>
+            <a @class(['is-active' => request()->routeIs('home')]) href="{{ route('home') }}" @if (request()->routeIs('home')) aria-current="page" @endif>Beranda</a>
+            <a @class(['is-active' => request()->routeIs('about')]) href="{{ route('about') }}" @if (request()->routeIs('about')) aria-current="page" @endif>Tentang Kami</a>
+            <a @class(['is-active' => request()->routeIs('products.*')]) href="{{ route('products.index') }}" @if (request()->routeIs('products.*')) aria-current="page" @endif>Produk</a>
+            <a @class(['is-active' => request()->routeIs('brands.*')]) href="{{ route('brands.index') }}" @if (request()->routeIs('brands.*')) aria-current="page" @endif>Principal</a>
+            <a @class(['is-active' => request()->routeIs('industries')]) href="{{ route('industries') }}" @if (request()->routeIs('industries')) aria-current="page" @endif>Solusi</a>
+            <a @class(['is-active' => request()->routeIs('contact')]) href="{{ route('contact') }}" @if (request()->routeIs('contact')) aria-current="page" @endif>Kontak</a>
         </nav>
 
         <a class="header-cta" href="{{ route('inquiry.create') }}">Minta Penawaran</a>

@@ -53,6 +53,8 @@
     line-height: 0.96;
     font-weight: 950;
     text-transform: uppercase;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
 }
 
 .home-hero h1 span {
@@ -125,6 +127,8 @@
     line-height: 1.08;
     font-weight: 950;
     text-transform: uppercase;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
 }
 
 .home-section-head p,
@@ -219,6 +223,7 @@
     line-height: 1.25;
     font-weight: 950;
     text-transform: uppercase;
+    overflow-wrap: anywhere;
 }
 
 .home-service-card p,
@@ -705,6 +710,41 @@
     }
 }
 
+@media (max-width: 420px) {
+    .home-hero {
+        padding-top: 64px;
+        padding-bottom: 58px;
+    }
+
+    .home-kicker,
+    .home-eyebrow {
+        font-size: 0.68rem;
+        line-height: 1.35;
+    }
+
+    .home-kicker::before,
+    .home-eyebrow::before {
+        width: 26px;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.15rem, 13vw, 3rem);
+    }
+
+    .home-hero-stats div {
+        min-height: 76px;
+        padding: 15px 16px;
+    }
+
+    .home-service-card > div,
+    .home-catalog-grid article,
+    .home-industry-grid article,
+    .home-team-note,
+    .home-rfq-form {
+        padding: 20px;
+    }
+}
+
 :root {
     --ink: #0a2137;
     --ink-2: #103756;
@@ -811,13 +851,15 @@ img {
 
 .main-nav a:hover,
 .main-nav a:focus-visible,
-.main-nav a:active {
+.main-nav a:active,
+.main-nav a.is-active {
     color: var(--orange);
 }
 
 .main-nav a:hover::after,
 .main-nav a:focus-visible::after,
-.main-nav a:active::after {
+.main-nav a:active::after,
+.main-nav a.is-active::after {
     transform: scaleX(1);
 }
 
@@ -857,6 +899,29 @@ img {
 .header-cta:active {
     transform: translateY(1px);
     box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
+}
+
+@media (max-width: 1180px) {
+    .site-header {
+        padding-inline: clamp(16px, 2.6vw, 32px);
+    }
+
+    .brand {
+        min-width: 164px;
+    }
+
+    .brand-logo {
+        width: clamp(132px, 13vw, 168px);
+    }
+
+    .main-nav {
+        gap: clamp(14px, 1.7vw, 22px);
+        font-size: 0.74rem;
+    }
+
+    .header-cta {
+        padding-inline: 14px;
+    }
 }
 
 .btn-secondary {

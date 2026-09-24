@@ -69,3 +69,5 @@ Dokumen ini mengikuti `docs/PRD_PT_Syirkah_Mandiri_Artomoro.md` dan diperbarui s
 - Admin CMS masih pending karena termasuk rekomendasi pengembangan besar pada PRD.
 - Homepage landing page sudah disusun ulang dari hero sampai RFQ dengan visual industrial, kartu bidang keahlian, trust section, katalog, sektor industri, dan tim sesuai arah desain terbaru.
 - Kartu bidang utama nomor 05 sudah diseragamkan menjadi satu card gambar dan teks seperti nomor 01 sampai 04.
+- Navbar sudah ditambahkan menu Beranda dan penanda menu aktif untuk membantu orientasi pengguna.
+- Responsive homepage dan navbar sudah dipoles untuk desktop sempit, tablet, mobile, dan layar sangat kecil.
