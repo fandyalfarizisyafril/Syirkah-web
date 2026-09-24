@@ -4,15 +4,20 @@
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="eyebrow">{{ $company['positioning'] }}</span>
-            <h1>Solusi teknis dan pengadaan industri presisi tinggi.</h1>
+            <span class="hero-badge">Official OEM Distributor & Heavy Industrial Contractor</span>
+            <h1>
+                <span class="hero-title-line">Solusi Teknis &</span>
+                <span class="hero-title-accent">Pengadaan Industri</span>
+                <span class="hero-title-line">Presisi Tinggi.</span>
+            </h1>
             <p>
-                {{ $company['name'] }} menghubungkan kebutuhan industri di Indonesia dengan produk OEM,
-                principal global, dan dukungan teknis yang sesuai spesifikasi.
+                {{ $company['name'] }} adalah mitra strategis pengadaan peralatan vital dan rekayasa teknis industri.
+                Kami menjembatani principal global dengan kebutuhan operasional sektor pertambangan, minyak & gas,
+                petrokimia, maritim, dan manufaktur skala berat.
             </p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="{{ route('products.index') }}">Lihat Katalog</a>
-                <a class="btn btn-secondary" href="{{ route('about') }}">Profil Perusahaan</a>
+                <a class="btn btn-primary" href="{{ route('inquiry.create') }}">Konsultasi Teknis / RFQ</a>
+                <a class="btn btn-secondary" href="#layanan">Jelajahi 5 Bidang Utama</a>
             </div>
             <dl class="hero-stats" aria-label="Ringkasan kapabilitas">
                 <div>

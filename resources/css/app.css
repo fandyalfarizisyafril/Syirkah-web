@@ -170,13 +170,13 @@ img {
 
 .hero {
     position: relative;
-    min-height: 680px;
+    min-height: 720px;
     display: flex;
     align-items: center;
     isolation: isolate;
     background-image: url('/images/industrial-hero.png');
     background-size: cover;
-    background-position: center;
+    background-position: center right;
 }
 
 .hero-overlay {
@@ -184,15 +184,35 @@ img {
     inset: 0;
     z-index: -1;
     background:
-        linear-gradient(90deg, rgba(5, 21, 37, 0.96) 0%, rgba(6, 29, 51, 0.86) 35%, rgba(6, 29, 51, 0.34) 72%, rgba(6, 29, 51, 0.08) 100%),
-        linear-gradient(0deg, rgba(5, 21, 37, 0.42), rgba(5, 21, 37, 0.05));
+        linear-gradient(90deg, rgba(5, 21, 37, 0.98) 0%, rgba(7, 38, 66, 0.88) 42%, rgba(7, 38, 66, 0.48) 72%, rgba(7, 38, 66, 0.18) 100%),
+        linear-gradient(0deg, rgba(5, 21, 37, 0.58), rgba(5, 21, 37, 0.08));
 }
 
 .hero-content {
     width: min(1120px, calc(100% - 36px));
     margin: 0 auto;
-    padding: 92px 0 70px;
+    padding: 86px 0 64px;
     color: var(--paper);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 5px 10px;
+    color: var(--paper);
+    background: var(--orange);
+    font-size: 0.68rem;
+    font-weight: 950;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hero-badge::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: var(--paper);
 }
 
 .eyebrow {
@@ -214,20 +234,32 @@ img {
 }
 
 .hero h1 {
-    max-width: 680px;
-    margin: 18px 0;
-    font-size: clamp(2.45rem, 6vw, 5.65rem);
-    line-height: 0.96;
+    max-width: 800px;
+    margin: 28px 0 20px;
+    font-size: clamp(2.65rem, 4.55vw, 4.9rem);
+    line-height: 1.04;
     font-weight: 950;
     text-transform: uppercase;
 }
 
+.hero h1 span {
+    display: block;
+}
+
+.hero-title-line {
+    color: var(--paper);
+}
+
+.hero-title-accent {
+    color: var(--orange);
+}
+
 .hero p {
-    max-width: 620px;
+    max-width: 640px;
     margin: 0;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 1.04rem;
-    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1rem;
+    line-height: 1.72;
 }
 
 .hero-actions {
@@ -240,20 +272,22 @@ img {
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(4, minmax(120px, 1fr));
-    gap: 14px;
-    max-width: 780px;
-    margin: 56px 0 0;
+    gap: 0;
+    max-width: 910px;
+    margin: 58px 0 0;
 }
 
 .hero-stats div {
-    padding: 18px 16px;
-    border-top: 3px solid var(--orange);
-    background: rgba(255, 255, 255, 0.08);
+    padding: 0 24px 0 18px;
+    border-top: 0;
+    border-left: 2px solid var(--orange);
+    background: transparent;
 }
 
 .hero-stats dt {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 950;
+    line-height: 1;
 }
 
 .hero-stats dd {
@@ -362,17 +396,18 @@ img {
 
 .expertise-card {
     position: relative;
-    min-height: 330px;
+    min-height: 390px;
     display: flex;
     align-items: end;
     overflow: hidden;
+    padding: 0;
     color: var(--paper);
     background: var(--ink);
     border: 0;
-    border-top: 5px solid var(--ink-2);
+    border-radius: 14px;
     box-shadow: 0 18px 44px rgba(10, 33, 55, 0.08);
     isolation: isolate;
-    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .expertise-card::before,
@@ -395,14 +430,13 @@ img {
 .expertise-card::after {
     z-index: -1;
     background:
-        linear-gradient(180deg, rgba(9, 29, 49, 0.2), rgba(9, 29, 49, 0.9)),
-        linear-gradient(90deg, rgba(9, 29, 49, 0.78), rgba(9, 29, 49, 0.24));
+        linear-gradient(180deg, rgba(9, 29, 49, 0.02) 34%, rgba(9, 29, 49, 0.78) 100%),
+        linear-gradient(90deg, rgba(9, 29, 49, 0.12), rgba(9, 29, 49, 0.04));
 }
 
 .expertise-card:hover,
 .expertise-card:focus-visible {
-    transform: translateY(-8px);
-    border-top-color: var(--ink-2);
+    transform: translateY(-6px);
     box-shadow: 0 24px 54px rgba(10, 33, 55, 0.2);
 }
 
@@ -414,7 +448,7 @@ img {
 
 .expertise-card:hover::after,
 .expertise-card:focus-visible::after {
-    opacity: 0.84;
+    opacity: 0.55;
 }
 
 .expertise-card:active {
@@ -423,65 +457,80 @@ img {
 
 .expertise-card .expertise-number,
 .expertise-card .expertise-arrow {
-    position: absolute;
-    top: 22px;
-    z-index: 1;
-    color: var(--orange);
-    font-weight: 950;
-}
-
-.expertise-card .expertise-number {
-    left: 24px;
-}
-
-.expertise-card .expertise-arrow {
-    right: 24px;
-    display: grid;
-    place-items: center;
-    width: 36px;
-    height: 36px;
-    color: var(--paper);
-    background: var(--orange);
-    border-radius: 50%;
-    font-size: 1.9rem;
-    line-height: 1;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: opacity 180ms ease, transform 180ms ease;
-}
-
-.expertise-card:hover .expertise-arrow,
-.expertise-card:focus-visible .expertise-arrow {
-    opacity: 1;
-    transform: translateX(0);
+    display: none;
 }
 
 .expertise-content {
     display: block;
-    padding: 86px 24px 26px;
+    width: 100%;
+    min-width: 0;
+    min-height: 82px;
+    padding: 24px 28px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(20, 158, 158, 0), rgba(94, 58, 150, 0));
+    transform: translateY(0);
+    transition: min-height 260ms ease, padding 260ms ease, background 260ms ease;
 }
 
 .expertise-card h3 {
-    margin: 0 0 14px;
+    margin: 0;
     color: var(--paper);
-    font-size: clamp(1.35rem, 2.2vw, 2.05rem);
-    line-height: 0.98;
-    font-weight: 950;
+    max-width: 100%;
+    font-size: clamp(1.25rem, 1.8vw, 1.72rem);
+    line-height: 1.12;
+    font-weight: 850;
     text-transform: uppercase;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
     transition: transform 220ms ease;
 }
 
 .expertise-card p {
+    max-height: 0;
+    margin: 0 auto;
     color: rgba(255, 255, 255, 0.84);
-    font-size: 0.98rem;
+    max-width: 100%;
+    font-size: clamp(0.82rem, 0.9vw, 0.92rem);
+    line-height: 1.55;
+    opacity: 0;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    transition: max-height 260ms ease, margin-top 260ms ease, opacity 200ms ease;
+}
+
+.expertise-card-featured h3 {
+    font-size: clamp(1.25rem, 1.8vw, 1.72rem);
+}
+
+.expertise-card-featured p {
+    max-width: 100%;
 }
 
 .expertise-card:hover h3,
 .expertise-card:focus-visible h3 {
-    transform: translateY(-4px);
+    transform: translateY(0);
+}
+
+.expertise-card:hover .expertise-content,
+.expertise-card:focus-visible .expertise-content {
+    min-height: 48%;
+    padding: 34px 28px 32px;
+    background:
+        linear-gradient(135deg, rgba(7, 85, 179, 0.92), rgba(10, 33, 55, 0.96)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+}
+
+.expertise-card:hover p,
+.expertise-card:focus-visible p {
+    max-height: 9rem;
+    margin-top: 18px;
+    opacity: 1;
+    font-weight: 500;
+    text-transform: none;
 }
 
 .expertise-card-featured {
+    grid-column: span 2;
     background: var(--ink);
 }
 
@@ -1270,7 +1319,7 @@ img {
 
     .hero {
         min-height: 720px;
-        background-position: 62% center;
+        background-position: 64% center;
     }
 
     .hero-stats,
@@ -1344,11 +1393,21 @@ img {
 
     .hero {
         min-height: 760px;
-        background-position: 70% center;
+        background-position: 72% center;
     }
 
     .hero h1 {
-        font-size: 2.55rem;
+        font-size: 2.18rem;
+        line-height: 1.05;
+    }
+
+    .hero-badge {
+        font-size: 0.58rem;
+        max-width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
     }
 
     .hero-stats,
