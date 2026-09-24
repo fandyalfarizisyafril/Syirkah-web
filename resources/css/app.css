@@ -772,6 +772,7 @@ body {
     background: var(--paper);
     font-family: var(--font-sans);
     letter-spacing: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -781,6 +782,7 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .site-header {
@@ -2328,5 +2330,314 @@ img {
     .spec-list div {
         grid-template-columns: 1fr;
         gap: 6px;
+    }
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 12px;
+        width: 100%;
+        overflow: hidden;
+        padding: 12px 14px 16px;
+    }
+
+    .site-header > * {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .brand {
+        width: min(240px, 78vw);
+        justify-items: center;
+    }
+
+    .brand-logo {
+        width: min(188px, 62vw);
+    }
+
+    .brand-name {
+        max-width: 100%;
+        font-size: 0.64rem;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+    .main-nav {
+        order: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        width: min(100%, 78vw, 680px);
+        max-width: 100%;
+        min-width: 0;
+        justify-self: stretch;
+        overflow: visible;
+        font-size: 0.67rem;
+    }
+
+    .main-nav a {
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 6px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        background: #ffffff;
+        line-height: 1.15;
+        text-align: center;
+        min-width: 0;
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .main-nav a::after {
+        display: none;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible,
+    .main-nav a:active,
+    .main-nav a.is-active {
+        color: #ffffff;
+        background: var(--orange);
+        border-color: var(--orange);
+    }
+
+    .header-cta {
+        width: min(100%, 78vw, 680px);
+        justify-self: stretch;
+        min-height: 46px;
+    }
+
+    .home-hero {
+        padding: 50px 18px 54px;
+        background-position: 61% center;
+    }
+
+    .home-hero-inner,
+    .home-section-head,
+    .home-brand-head,
+    .home-expertise-grid,
+    .home-trust-grid,
+    .home-critical-inner,
+    .home-brand-list,
+    .home-catalog-grid,
+    .home-industry-grid,
+    .home-team-grid,
+    .home-rfq-copy,
+    .home-rfq-form {
+        width: min(100%, 78vw, 680px);
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-kicker {
+        display: block;
+        max-width: 100%;
+        font-size: 0.56rem;
+        line-height: 1.35;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .home-kicker::before {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .home-hero h1 {
+        max-width: 100%;
+        margin-block: 16px;
+        font-size: clamp(1.95rem, 9vw, 2.25rem);
+        line-height: 1.06;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .home-hero p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .home-hero-actions {
+        margin-top: 24px;
+    }
+
+    .home-hero-stats {
+        gap: 10px;
+        margin-top: 32px;
+    }
+
+    .home-hero-stats div {
+        min-height: 76px;
+        padding: 14px 16px;
+    }
+
+    .home-hero-stats dt {
+        font-size: 1.55rem;
+    }
+
+    .home-section,
+    .home-critical,
+    .home-rfq {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .home-section-head {
+        margin-bottom: 24px;
+    }
+
+    .home-section-head h2,
+    .home-brand-head h2,
+    .home-critical h2,
+    .home-rfq h2 {
+        font-size: clamp(1.45rem, 7vw, 1.9rem);
+        line-height: 1.12;
+    }
+
+    .home-section-head p,
+    .home-brand-head p,
+    .home-rfq-copy p {
+        font-size: 0.94rem;
+        line-height: 1.65;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .home-service-card img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .home-service-card h3,
+    .home-catalog-grid h3 {
+        font-size: 0.98rem;
+    }
+
+    .home-service-card p,
+    .home-service-card li,
+    .home-catalog-grid p,
+    .home-catalog-grid dd,
+    .home-industry-grid p,
+    .home-team-note p {
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .home-critical-inner {
+        background: transparent;
+    }
+
+    .home-critical-copy,
+    .home-critical article,
+    .home-rfq-form {
+        padding: 22px;
+    }
+
+    .home-critical img {
+        min-height: 240px;
+    }
+
+    .home-brand-list a {
+        min-height: 72px;
+    }
+
+    .home-catalog-grid dl div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .home-industry-grid article {
+        min-height: auto;
+    }
+
+    .home-team-grid {
+        gap: 12px;
+    }
+
+    .home-team-grid img {
+        min-height: 210px;
+    }
+
+    .footer-inner {
+        padding-inline: 18px;
+    }
+
+    .footer-tagline-logo {
+        width: min(300px, 86vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav,
+    .header-cta {
+        width: min(100%, 348px);
+        justify-self: center;
+    }
+
+    .main-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-hero {
+        padding-left: 16px;
+        padding-right: 16px;
+        background-position: 58% center;
+    }
+
+    .home-hero-inner,
+    .home-section-head,
+    .home-brand-head,
+    .home-expertise-grid,
+    .home-trust-grid,
+    .home-critical-inner,
+    .home-brand-list,
+    .home-catalog-grid,
+    .home-industry-grid,
+    .home-team-grid,
+    .home-rfq-copy,
+    .home-rfq-form {
+        width: min(100%, 354px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-section,
+    .home-critical,
+    .home-rfq {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2rem, 9.4vw, 2.26rem);
+    }
+}
+
+@media (max-width: 380px) {
+    .main-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2rem, 12vw, 2.65rem);
+    }
+
+    .home-hero-stats dt {
+        font-size: 1.42rem;
+    }
+
+    .home-section-head h2,
+    .home-brand-head h2,
+    .home-critical h2,
+    .home-rfq h2 {
+        font-size: 1.55rem;
     }
 }
